@@ -3,16 +3,28 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
-        <nav className="bg-gray-800 text-white">
-            <ul>
+        <nav className="bg-slate-700 text-white py-4 flex items-center px-8">
+            <ul className="grow">
                 <li>
-                    <Link to={'/'}>Home</Link>
+                    <Link to={'/'} className="flex gap-3 items-center">
+                        <img src="/design.png" alt="logo" />
+                        <span className="text-xl font-bold">
+                            Design styles
+                        </span>
+                    </Link>
+                </li>
+            </ul>
+
+            <ul className="flex justify-center items-center gap-10 text-lg">
+                <li>
+                    <Link to={'/'}
+                        className="hover:border-b hover:text-gray-200">Home</Link>
                 </li>
                 <li>
-                    <Link to={'/Colors'}>Colors</Link>
+                    <Link to={'/Colors'} className="hover:border-b hover:text-gray-200">Colors</Link>
                 </li>
                 <li>
-                    <Link to={'/Buttons'}>Buttons</Link>
+                    <Link to={'/Buttons'} className="hover:border-b hover:text-gray-200">Buttons</Link>
                 </li>
             </ul>
         </nav>
