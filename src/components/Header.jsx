@@ -21,10 +21,10 @@ export default function Header() {
                         className="hover:border-b hover:text-gray-200">Home</Link>
                 </li>
                 <li>
-                    <Link to={'/Colors'} className="hover:border-b hover:text-gray-200">Colors</Link>
+                    <Link to={'/colors'} className="hover:border-b hover:text-gray-200">Colors</Link>
                 </li>
                 <li>
-                    <Link to={'/Buttons'} className="hover:border-b hover:text-gray-200">Buttons</Link>
+                    <Link to={'/buttons'} className="hover:border-b hover:text-gray-200">Buttons</Link>
                 </li>
             </ul>
         </nav>
